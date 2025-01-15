@@ -64,5 +64,6 @@ class TestMNISTModel(unittest.TestCase):
         self.assertGreaterEqual(test_acc, 0)
         self.assertLessEqual(test_acc, 1)
 
+
 if __name__ == '__main__':
     unittest.main()
