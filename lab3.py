@@ -3,7 +3,7 @@ from sklearn.datasets import fetch_openml
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler
 from sklearn.linear_model import LogisticRegression
-from sklearn.metrics import accuracy_scoreE305 expected 2 blank lines after class or function definition, found 1
+from sklearn.metrics import accuracy_score
 
 # Загрузка данных MNIST
 mnist = fetch_openml('mnist_784', version=1)
