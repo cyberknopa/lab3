@@ -27,6 +27,7 @@ jobs:
         python -m pip install --upgrade pip
         pip install tensorflow
         pip install -r requirements.txt
+        
     - name: Run linters (Flake8)
       run: |
         flake8 .
