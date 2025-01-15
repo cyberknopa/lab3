@@ -1,6 +1,6 @@
-scikit-learn==1.5.0
+scikit-learn==1.7
 numpy
 keras==3.8.0
 flake8
 pip-audit
-setuptools==65.5.1
+setuptools==75.8.0
