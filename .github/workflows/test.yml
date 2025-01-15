@@ -25,6 +25,16 @@ jobs:
       run: |
         python -m pip install --upgrade pip
         pip install tensorflow
+        
+    - name: Run linters (Flake8)
+      run: |
+        source .venv/bin/activate
+        flake8 .
+    - name: Run code formatter (Black)
+      run: |
+        source .venv/bin/activate
+        black --check .
+        
     - name: Run tests
       env:
         API_KEY: ${{ secrets.API_KEY }}  # Использование секрета
