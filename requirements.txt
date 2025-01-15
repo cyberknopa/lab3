@@ -3,4 +3,4 @@ numpy
 keras == 2.15.0
 flake8
 pip-audit
-setuptools == 75.8.0
+setuptools == 75.3.0
