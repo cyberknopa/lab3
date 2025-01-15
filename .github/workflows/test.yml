@@ -31,6 +31,7 @@ jobs:
     - name: Run linters (Flake8)
       run: |
         flake8 .
+        
     - name: Check dependencies for vulnerabilities
       run: |
         pip-audit
