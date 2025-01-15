@@ -4,7 +4,6 @@ from tensorflow.keras.models import Sequential
 
 
 class TestMNISTModel(unittest.TestCase):
-    
     def setUp(self):
         # Инициализация данных для тестов
         (self.x_train, self.y_train), (self.x_test, self.y_test) = \
@@ -39,7 +38,7 @@ class TestMNISTModel(unittest.TestCase):
                       loss='categorical_crossentropy',
                       metrics=['accuracy'])
         history = model.fit(self.x_train_10, self.y_train_10,
-                            epochs=1, batch_size=32, 
+                            epochs=1, batch_size=32,
                             validation_data=(self.x_test_10, self.y_test_10))
         # Проверка, что после обучения хотя бы одна эпоха прошла
         self.assertGreater(len(history.history['loss']), 0)
