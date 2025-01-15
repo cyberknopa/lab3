@@ -2,6 +2,8 @@ import numpy as np
 from sklearn.datasets import fetch_openml
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler
+from sklearn.linear_model import LogisticRegression
+from sklearn.metrics import accuracy_scoreE305 expected 2 blank lines after class or function definition, found 1
 
 # Загрузка данных MNIST
 mnist = fetch_openml('mnist_784', version=1)
@@ -18,9 +20,8 @@ scaler = StandardScaler()
 data = scaler.fit_transform(data)
 
 # Разделение на обучающую и тестовую выборки
-X_train, X_test, y_train, y_test = train_test_split(data, target, test_size=0.2, random_state=42)
-from sklearn.linear_model import LogisticRegression
-from sklearn.metrics import accuracy_score
+X_train, X_test, y_train, y_test = 
+= train_test_split(data, target, test_size=0.2, random_state=42)
 
 # Создание модели логистической регрессии
 model = LogisticRegression(max_iter=1000)
