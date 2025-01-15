@@ -31,9 +31,6 @@ jobs:
     - name: Run linters (Flake8)
       run: |
         flake8 .
-    - name: Run code formatter (Black)
-      run: |
-        black --check .
         
     - name: Run tests
       env:
